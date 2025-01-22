@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar {
+  margin: 20px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.school {
+  display: flex;
+  align-items: center;
+}
+.school-title {
+  margin-left: 11px;
+  font-weight: bold;
+  font-size: 32px;
+}
+.menus {
+  text-decoration: none;
+  display: flex;
+}
+.menu-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.menu {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.orange {
+  color: #fea301;
+}
+.skyblue {
+  color: #01acfd;
+}
+.light-blue {
+  color: #05d4df;
+}
+.purple {
+  color: #5d58ef;
+}
+.btn-common {
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+}
+.btn-contact {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 10px 60px;
+  border-radius: 12px;
+  color: white;
+  background-color: #fea301;
+  border: none;
+}
+.empower-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 141px;
+}
+.empower-content {
+  padding: 122px 50px 122px 0;
+  width: 640px;
+  height: 331px;
+}
+.empower {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.empower-description {
+  font-size: 1.25rem;
+}
+.btn-enroll {
+  font-size: 1.25rem;
+  color: white;
+  background-color: black;
+}
+.hero {
+  margin: 0 17px;
+  width: 100%;
+}
+.standard {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2.875rem;
+  font-weight: bold;
+}
+.standard-box {
+  background-image: url(assets/bg.png);
+  width: 1440px;
+  height: 879px;
+  /* background: linear-gradient(#def5ff, white); */
+}
+.shade1 {
+  background: linear-gradient(#def5ff, white);
+}
+.shade2 {
+  background: linear-gradient(#fff4dc, white);
+}
+.shade3 {
+  background: linear-gradient(#eee1ff, white);
+}
+
+.standard-item {
+  margin: 80px 140px;
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.box-content {
+  border-radius: 18.86px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 368px;
+  height: 477px;
+}
+.bold {
+  margin-top: 32px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.p-color {
+  margin-bottom: 39px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #808080;
+}
+.btn-read {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.clr-rd1 {
+  color: #64c8ff;
+}
+.clr-rd2 {
+  color: #f0aa00;
+}
+.clr-rd3 {
+  color: #8700ff;
+}
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #fea301;
+  }
+  /* .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  } */
+  .school-title {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .btn-contact {
+    display: none;
+  }
+  .empower {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .empower-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    margin: 0 7px;
+  }
+  .empower-content {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .empower-description {
+    font-size: 1.14rem;
+    font-weight: 500;
+  }
+  /* .hero {
+    margin: 0 17px;
+    width: 100%;
+  } */
+}
