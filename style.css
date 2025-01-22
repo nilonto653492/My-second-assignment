@@ -6,6 +6,13 @@
   font-weight: 400;
   font-style: normal;
 }
+.res-nav {
+  display: none;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid orange;
+}
 .navbar {
   margin: 20px 140px;
   display: flex;
@@ -67,9 +74,9 @@
   margin: 20px 141px;
 }
 .empower-content {
-  padding: 122px 50px 122px 0;
-  width: 640px;
-  height: 331px;
+  padding: 7.625rem 3.125rem 7.625rem 0;
+  width: 40rem;
+  height: 20.6875rem;
 }
 .empower {
   font-size: 3.5rem;
@@ -89,16 +96,17 @@
   width: 100%;
 }
 .standard {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   text-align: center;
   font-size: 2.875rem;
   font-weight: bold;
 }
 .standard-box {
+  margin: auto;
+  align-content: center;
   background-image: url(assets/bg.png);
-  width: 1440px;
-  height: 879px;
-  /* background: linear-gradient(#def5ff, white); */
+  width: 90rem;
+  height: 54.93rem;
 }
 .shade1 {
   background: linear-gradient(#def5ff, white);
@@ -111,7 +119,7 @@
 }
 
 .standard-item {
-  margin: 80px 140px;
+  margin: 5rem 8.75rem;
   display: flex;
 
   justify-content: space-evenly;
@@ -119,13 +127,14 @@
 .box-content {
   border-radius: 18.86px;
   text-align: center;
-  align-content: center;
+
+  align-items: center;
   justify-content: center;
-  width: 368px;
-  height: 477px;
+  width: 23rem;
+  height: 29.8125rem;
 }
 .bold {
-  margin-top: 32px;
+  margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -149,30 +158,65 @@
 .clr-rd3 {
   color: #8700ff;
 }
+.arrow {
+  color: #fea301;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* story section */
+.storybox {
+  /* background-image: url(assets/bg.png); */
+  /* backdrop-filter: linear-gradient(white, #febf4d); */
+  margin: auto;
+
+  width: 90rem;
+  height: 63.625rem;
+  background: linear-gradient(white, #febf4d);
+}
+.story {
+  /* width: 100%; */
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+}
+.story-box1 {
+  background-color: white;
+  border-radius: 16px;
+  width: 540px;
+  height: 630.5px;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+.story-img {
+  border-radius: 16px 16px 0 0;
+}
+/* .date {
+  position: absolute;
+  bottom: -1450px;
+  left: 120px;
+  background-color: #05d4df;
+  width: 10.9rem;
+  height: 3rem;
+  text-align: center;
+  align-content: center;
+  border-radius: 3rem;
+} */
 @media screen and (max-width: 576px) {
   .navbar {
-    padding: 0;
-    margin: 0;
+    display: none;
+  }
+  .res-nav {
     width: 100%;
-    border: 1px solid #fea301;
+    display: flex;
   }
-  /* .menu-icon {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-  } */
-  .school-title {
-    display: none;
-  }
-  .menu {
-    display: none;
-  }
-  .btn-contact {
-    display: none;
-  }
+
   .empower {
     font-size: 2rem;
-    margin: 0;
+    /* margin: 0; */
+    margin-bottom: 2rem;
   }
   .empower-box {
     width: 100%;
@@ -180,19 +224,48 @@
     flex-direction: column-reverse;
     align-content: center;
     justify-content: center;
-    margin: 0 7px;
+    margin: 0;
   }
   .empower-content {
     width: 100%;
+    align-content: center;
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
+    margin: 0;
   }
   .empower-description {
-    font-size: 1.14rem;
-    font-weight: 500;
+    display: none;
   }
-  /* .hero {
-    margin: 0 17px;
+  .hero {
+    margin: 0;
+  }
+  .standard {
+    text-align: center;
+    margin: 0;
+
     width: 100%;
-  } */
+    padding: 0;
+  }
+  .standard-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    /* justify-content: space-evenly; */
+  }
+  .box-content {
+    width: 100%;
+    margin: 0;
+  }
+  .standard-box {
+    width: 100%;
+    margin: 0;
+  }
+  .arrow {
+    display: none;
+  }
 }
