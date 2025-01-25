@@ -102,7 +102,7 @@
   font-weight: bold;
 }
 .standard-box {
-  margin: auto;
+  margin: 0 auto;
   align-content: center;
   background-image: url(assets/bg.png);
   width: 90rem;
@@ -167,13 +167,8 @@
 }
 /* story section */
 .storybox {
-  /* background-image: url(assets/bg.png); */
-  /* backdrop-filter: linear-gradient(white, #febf4d); */
-  margin: auto;
-
-  width: 90rem;
-  height: 63.625rem;
-  background: linear-gradient(white, #febf4d);
+  width: 100%;
+  background: linear-gradient(white, rgba(254, 163, 1, 1));
 }
 .story {
   /* width: 100%; */
@@ -181,29 +176,106 @@
   font-size: 46px;
   font-weight: bold;
 }
+.head-storybox {
+  width: 72.5rem;
+  height: 39.5rem;
+  margin: 12.34rem auto;
+  display: flex;
+
+  justify-content: center;
+  /* align-content: center; */
+  /* align-items: center; */
+}
 .story-box1 {
   background-color: white;
   border-radius: 16px;
   width: 540px;
   height: 630.5px;
-  margin: auto;
-  align-content: center;
-  text-align: center;
+  margin: 0 auto;
+}
+.story-box2 {
+  display: grid;
+  /* width: 37.5rem;
+  height: 38.9rem; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.cmn-storybox {
+  background-color: white;
+  width: 18.15rem;
+  height: 18.84rem;
+  border-radius: 1rem;
 }
 .story-img {
-  border-radius: 16px 16px 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
-/* .date {
-  position: absolute;
-  bottom: -1450px;
-  left: 120px;
-  background-color: #05d4df;
-  width: 10.9rem;
-  height: 3rem;
-  text-align: center;
-  align-content: center;
-  border-radius: 3rem;
-} */
+.fun {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 2.375rem;
+  padding-right: 6.21rem;
+}
+.fun-text {
+  font-weight: 500;
+  padding-left: 2.375rem;
+  padding-right: 6.21rem;
+}
+.cmn-text {
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding-block-start: 1.18rem;
+  padding-left: 2.375rem;
+  padding-right: 3.875rem;
+}
+.view-button {
+  padding: 10px;
+  border-radius: 12px;
+  width: 12.3125rem;
+  height: 3.125rem;
+  color: white;
+  background-color: black;
+  margin-bottom: 3.75rem;
+}
+.vw-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 32.4rem;
+  background-color: #01acfd;
+}
+.footer-logo {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.pera {
+  font-size: 1.25rem;
+}
+.white {
+  color: white;
+}
+.last-menu {
+  text-decoration: none;
+  padding: 10px;
+}
+.anchor {
+  padding: 10px;
+}
+.last-box {
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+
+  width: 66.93rem;
+  height: 13.875rem;
+}
 @media screen and (max-width: 576px) {
   .navbar {
     display: none;
@@ -215,7 +287,7 @@
 
   .empower {
     font-size: 2rem;
-    /* margin: 0; */
+
     margin-bottom: 2rem;
   }
   .empower-box {
@@ -267,5 +339,23 @@
   }
   .arrow {
     display: none;
+  }
+  .storybox {
+    width: 100%;
+  }
+  .story-box1 {
+    display: none;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+  }
+  .head-storybox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .story-box2 {
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
   }
 }
